@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Jsonly.xcodeproj">
+      location = "self:/Users/matthewfaller/Documents/Upwork/personal-projects/Jsonly/SwiftJson.xcodeproj">
    </FileRef>
 </Workspace>
