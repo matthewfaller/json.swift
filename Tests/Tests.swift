@@ -7,7 +7,7 @@
 //  The cleanest way to deal with Json.
 
 import XCTest
-@testable import Jsonly
+@testable import SwiftJson
 
 class Tests: XCTestCase {
     

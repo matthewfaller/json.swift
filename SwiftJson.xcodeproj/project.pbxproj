@@ -10,6 +10,9 @@
 		423CD78F1D3EB35800633B03 /* SwiftJson.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423CD7841D3EB35800633B03 /* SwiftJson.framework */; };
 		423CD7941D3EB35800633B03 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423CD7931D3EB35800633B03 /* Tests.swift */; };
 		423CD79F1D3EB36900633B03 /* Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423CD79E1D3EB36900633B03 /* Json.swift */; };
+		42C40D911E300AFF005EE58B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 423CD7891D3EB35800633B03 /* Info.plist */; };
+		42C40D921E300B11005EE58B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 423CD7951D3EB35800633B03 /* Info.plist */; };
+		42C40D931E300C87005EE58B /* Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423CD79E1D3EB36900633B03 /* Json.swift */; };
 		42D4E5EE1E282FF600E39576 /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 42D4E5ED1E282FF600E39576 /* sample.json */; };
 		42D4E5EF1E2845A300E39576 /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 42D4E5ED1E282FF600E39576 /* sample.json */; };
 /* End PBXBuildFile section */
@@ -80,8 +83,7 @@
 				423CD7891D3EB35800633B03 /* Info.plist */,
 				423CD79E1D3EB36900633B03 /* Json.swift */,
 			);
-			name = Core;
-			path = Jsonly;
+			path = Core;
 			sourceTree = "<group>";
 		};
 		423CD7921D3EB35800633B03 /* Tests */ = {
@@ -90,8 +92,7 @@
 				423CD7931D3EB35800633B03 /* Tests.swift */,
 				423CD7951D3EB35800633B03 /* Info.plist */,
 			);
-			name = Tests;
-			path = JsonlyTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +187,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42C40D911E300AFF005EE58B /* Info.plist in Resources */,
 				42D4E5EE1E282FF600E39576 /* sample.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -194,6 +196,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42C40D921E300B11005EE58B /* Info.plist in Resources */,
 				42D4E5EF1E2845A300E39576 /* sample.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				423CD7941D3EB35800633B03 /* Tests.swift in Sources */,
+				42C40D931E300C87005EE58B /* Json.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,7 +337,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Jsonly/Info.plist;
+				INFOPLIST_FILE = Core/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.matt.systems.Jsonly;
@@ -353,7 +357,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Jsonly/Info.plist;
+				INFOPLIST_FILE = Core/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.matt.systems.Jsonly;
@@ -366,7 +370,7 @@
 		423CD79C1D3EB35800633B03 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = JsonlyTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fall-soft.JsonlyTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -377,7 +381,7 @@
 		423CD79D1D3EB35800633B03 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = JsonlyTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fall-soft.JsonlyTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
