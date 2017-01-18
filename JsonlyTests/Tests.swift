@@ -9,7 +9,7 @@
 import XCTest
 @testable import Jsonly
 
-class JsonlyTests: XCTestCase {
+class Tests: XCTestCase {
     
     override func setUp() {
         super.setUp()

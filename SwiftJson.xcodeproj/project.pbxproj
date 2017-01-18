@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		423CD78F1D3EB35800633B03 /* SwiftJson.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423CD7841D3EB35800633B03 /* SwiftJson.framework */; };
-		423CD7941D3EB35800633B03 /* JsonlyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423CD7931D3EB35800633B03 /* JsonlyTests.swift */; };
+		423CD7941D3EB35800633B03 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423CD7931D3EB35800633B03 /* Tests.swift */; };
 		423CD79F1D3EB36900633B03 /* Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423CD79E1D3EB36900633B03 /* Json.swift */; };
 		42D4E5EE1E282FF600E39576 /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 42D4E5ED1E282FF600E39576 /* sample.json */; };
 		42D4E5EF1E2845A300E39576 /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 42D4E5ED1E282FF600E39576 /* sample.json */; };
@@ -26,10 +26,10 @@
 
 /* Begin PBXFileReference section */
 		423CD7841D3EB35800633B03 /* SwiftJson.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftJson.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		423CD7871D3EB35800633B03 /* Jsonly.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Jsonly.h; sourceTree = "<group>"; };
+		423CD7871D3EB35800633B03 /* SwiftJson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftJson.h; sourceTree = "<group>"; };
 		423CD7891D3EB35800633B03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		423CD78E1D3EB35800633B03 /* SwiftJsonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftJsonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		423CD7931D3EB35800633B03 /* JsonlyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonlyTests.swift; sourceTree = "<group>"; };
+		423CD7931D3EB35800633B03 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		423CD7951D3EB35800633B03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		423CD79E1D3EB36900633B03 /* Json.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Json.swift; sourceTree = "<group>"; };
 		42D4E5ED1E282FF600E39576 /* sample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sample.json; sourceTree = "<group>"; };
@@ -57,8 +57,8 @@
 		423CD77A1D3EB35800633B03 = {
 			isa = PBXGroup;
 			children = (
-				423CD7861D3EB35800633B03 /* Jsonly */,
-				423CD7921D3EB35800633B03 /* JsonlyTests */,
+				423CD7861D3EB35800633B03 /* Core */,
+				423CD7921D3EB35800633B03 /* Tests */,
 				423CD7851D3EB35800633B03 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,23 +72,25 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		423CD7861D3EB35800633B03 /* Jsonly */ = {
+		423CD7861D3EB35800633B03 /* Core */ = {
 			isa = PBXGroup;
 			children = (
 				42D4E5ED1E282FF600E39576 /* sample.json */,
-				423CD7871D3EB35800633B03 /* Jsonly.h */,
+				423CD7871D3EB35800633B03 /* SwiftJson.h */,
 				423CD7891D3EB35800633B03 /* Info.plist */,
 				423CD79E1D3EB36900633B03 /* Json.swift */,
 			);
+			name = Core;
 			path = Jsonly;
 			sourceTree = "<group>";
 		};
-		423CD7921D3EB35800633B03 /* JsonlyTests */ = {
+		423CD7921D3EB35800633B03 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				423CD7931D3EB35800633B03 /* JsonlyTests.swift */,
+				423CD7931D3EB35800633B03 /* Tests.swift */,
 				423CD7951D3EB35800633B03 /* Info.plist */,
 			);
+			name = Tests;
 			path = JsonlyTests;
 			sourceTree = "<group>";
 		};
@@ -211,7 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				423CD7941D3EB35800633B03 /* JsonlyTests.swift in Sources */,
+				423CD7941D3EB35800633B03 /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
