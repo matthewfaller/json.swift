@@ -49,6 +49,11 @@ public class Json {
         self.isArray = false
     }
     
+    public init(fromDictionary: Dictionary<String, Any>) {
+        self.jsonMap = fromDictionary as Dictionary<String, AnyObject>
+        self.isArray = false
+    }
+    
     public init(fromArray: Array<AnyObject>) {
         self.jsonArray = fromArray
         self.isArray = true
@@ -88,6 +93,12 @@ public class Json {
         self.init(fromObject: object)
     }
     
+    /**
+     Creates a json object from a Dictionary
+     - parameters:
+        - any: An object representing json, e.g.
+            A Dictionary, An Array, A value (leaf)
+     */
     public convenience init?(fromAny any: Any?) {
         self.init(fromObject: any as AnyObject)
     }

@@ -436,6 +436,33 @@ class Tests: XCTestCase {
         }
     }
     
+    func testValues2() {
+        
+        let d: Dictionary<String, Any> = [
+            "k1" : "string",
+            "k2" : 42,
+            "k3" : true,
+            "k4" : "null",
+            "k5" : 19.9,
+            "k6" : ""
+        ]
+        
+        let json1 = Json(fromAny: d)
+        let json2 = Json(fromDictionary: d)
+        
+        let v1 = json1?.get(forPath: "k1")?.asString
+        let v5 = json1?.get(forPath: "k5")?.asNumber
+        let v2 = json2["k2"]?.asNumber
+        
+        XCTAssert(v1 != nil)
+        XCTAssert(v5 != nil)
+        XCTAssert(v2 != nil)
+        
+        let result = v5?.isEqual(to: 19.9) ?? false
+       
+        XCTAssert(result)
+    }
+    
     func testArraysComplex() {
         
         let d1: [String: AnyObject] = [
