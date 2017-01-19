@@ -51,7 +51,54 @@ This is taking advantage of our simple 'dot' path notation. Further examples fol
 
 ### Json Objects
 
+A Json Object can be created by one of the convienient initializers: 
+
+```Swift
+let jsonResponse = Json(utf8text: jsonString)
+```
+
+```Swift
+let map = [
+  "key1": "value1",
+  "key2": [
+    "innerKey1": "val"
+  ]
+]
+
+let myJson = Json(fromDictionary: map)
+```
+
+Getting values out of your json can be done two ways: 
+
+#### 1. Dot Path 
+
+```Swift
+
+let myVal = myJson.get(forPath: "key2.innerKey1").asString
+```
+For each key separated by a dot (.), the "get(forPath:)" method will use optional chaining to reach deep into your json. 
+
+#### 2. Subscript Access
+
+Of course, some json keys might *also* have dots, i.e.: 
+
+```Json
+{
+    "phone.number" : "1-866-999-9999",
+    "user.profile" : {
+      "user.name" : "therealspiderman",
+      "email.masked" : "pete*******@dailybugle.com"
+    }
+}
+```
+The subscript operator will ignore any dots, treating the whole string as a key: 
+
+```Swift
+let email = myJson["user.profile"]?["email.masked"]?.asString
+```
+
 ### Json Arrays
+
 
 ### Json Values
 
