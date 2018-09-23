@@ -1,4 +1,8 @@
-# Json.swift
+# No Longer in Use
+A newer approach available makes this repository obsolete:
+[Decodable & Encodable](https://developer.apple.com/documentation/swift/codable)
+
+## Json.swift
 The easiest way to handle Json in Swift3. 
 
 ## Installation
